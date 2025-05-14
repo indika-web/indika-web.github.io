@@ -10,22 +10,38 @@
       font-family: 'Segoe UI', sans-serif;
       scroll-behavior: smooth;
     }
+
     .hero {
       background: linear-gradient(135deg, #0d6efd, #6610f2);
       color: white;
       padding: 100px 0;
       text-align: center;
     }
+
     .hero h1 {
       font-size: 3rem;
       font-weight: bold;
     }
+
     .section-title {
       margin-top: 60px;
       margin-bottom: 20px;
       font-weight: bold;
     }
-   
+
+    .zoom-container {
+      overflow: hidden;
+      border-radius: 5px;
+    }
+
+    .zoom-container img {
+      transition: transform 0.5s ease;
+    }
+
+    .zoom-container:hover img {
+      transform: scale(1.08);
+    }
+
     footer {
       background: #212529;
       color: white;
@@ -45,7 +61,7 @@
     </div>
   </section>
 
-  <!-- About Section with Photo -->
+  <!-- About Section -->
   <section id="about" class="container my-5">
     <div class="row align-items-center">
       <div class="col-md-4 text-center mb-4 mb-md-0">
@@ -66,8 +82,8 @@
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card">
-          <a href="images/whiteflower.jpg" target="_blank">
-            <img src="images/whiteflower.jpg" class="card-img-top w-100 zoom-img" alt="WhiteFlower.LK" />
+          <a href="https://www.whiteflower.lk" target="_blank" class="zoom-container">
+            <img src="images/whiteflower.jpg" class="card-img-top w-100" alt="WhiteFlower.LK" />
           </a>
           <div class="card-body">
             <h5 class="card-title">WhiteFlower.LK</h5>
@@ -76,10 +92,11 @@
           </div>
         </div>
       </div>
+
       <div class="col-md-4">
         <div class="card">
-          <a href="images/magicalflowers.jpg" target="_blank">
-            <img src="images/magicalflowers.jpg" class="card-img-top w-100 zoom-img" alt="MagicalFlowers.LK" />
+          <a href="https://www.magicalflowers.lk" target="_blank" class="zoom-container">
+            <img src="images/magicalflowers.jpg" class="card-img-top w-100" alt="MagicalFlowers.LK" />
           </a>
           <div class="card-body">
             <h5 class="card-title">MagicalFlowers.LK</h5>
@@ -88,10 +105,11 @@
           </div>
         </div>
       </div>
+
       <div class="col-md-4">
         <div class="card">
-          <a href="images/spicepeaks.jpg" target="_blank">
-            <img src="images/spicepeaks.jpg" class="card-img-top w-100 zoom-img" alt="SpicePeaks.Com" />
+          <a href="https://www.spicepeaks.com" target="_blank" class="zoom-container">
+            <img src="images/spicepeaks.jpg" class="card-img-top w-100" alt="SpicePeaks.Com" />
           </a>
           <div class="card-body">
             <h5 class="card-title">SpicePeaks.Com</h5>
@@ -102,7 +120,6 @@
       </div>
     </div>
   </section>
-
 
   <!-- Skills Section -->
   <section id="skills" class="container">
