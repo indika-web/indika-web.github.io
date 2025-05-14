@@ -65,8 +65,8 @@
           <img src="images/whiteflower.jpg" width="400px" class="card-img-top" alt="Project 1" />
           <div class="card-body">
             <h5 class="card-title">Portfolio Website</h5>
-            <p class="card-text">A responsive personal portfolio built with Bootstrap.</p>
-            <a href="#" class="btn btn-primary btn-sm">View Live</a>
+            <p class="card-text">A responsive cake related website.</p>
+            <a href="https://www.whiteflower.lk" target="_blank" class="btn btn-primary btn-sm">View Live</a>
           </div>
         </div>
       </div>
@@ -78,9 +78,10 @@
   <section id="skills" class="container">
     <h2 class="section-title">Skills</h2>
     <ul class="list-group list-group-flush">
+      <li class="list-group-item">WordPress</li>      
+      <li class="list-group-item">Bootstrap, jQuery</li>
       <li class="list-group-item">HTML5, CSS3, JavaScript (ES6+)</li>
-      <li class="list-group-item">Bootstrap, React, jQuery</li>
-      <li class="list-group-item">PHP, MySQL, Node.js (basic)</li>
+      <li class="list-group-item">PHP, MySQL</li>
       <li class="list-group-item">Git, GitHub, VS Code</li>
     </ul>
   </section>
@@ -89,17 +90,20 @@
   <section id="contact" class="container mb-5">
     <h2 class="section-title">Contact</h2>
     <p>Feel free to reach out!</p>
-    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">@yourusername</a></p>
+    <p>Email: <a href="mailto:indikakis@gmail.com">indikakis@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/indika-web" target="_blank">@indika-web</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+      <p id="copyright">&copy; <span id="year"></span> Indika. All rights reserved.</p>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
